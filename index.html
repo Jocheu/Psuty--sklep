@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="baner">
+        <h2>Skelp elketroniczy ;D</h2>
+    </div>
+    <div id="container">
+        <div id="content">
+            <form action="index2.php" method="post">
+                <table>
+                    <tr onmouseenter="obraz1()" onmouseleave="odraz()" class="zakupy">
+                        <td>
+                            <b>trans</b>ystorki
+                        </td>
+                        <td>
+                            <input type="text" class="pole_Ilosc" name="ile1">
+                        </td>
+                        <td>1,20/szt</td>
+                    </tr>
+                    <tr onmouseenter="obraz2()" onmouseleave="odraz()" class="zakupy">
+                        <td>
+                            rezystorki
+                        </td>
+                        <td>
+                            <input type="text" class="pole_Ilosc" name="ile2">
+                        </td>
+                        <td>1,00/szt</td>
+                    </tr>
+                    <tr onmouseenter="obraz3()" onmouseleave="odraz()" id="rgb" class="zakupy">
+                        <td>
+                            diody rgb
+                        </td>
+                        <td>
+                            <input type="text" class="pole_Ilosc" name="ile3">
+                        </td>
+                        <td>1,50/szt</td>
+                    </tr>
+                    <tr onmouseenter="obraz4()" onmouseleave="odraz()" class="zakupy">
+                        <td>
+                            kabelki
+                        </td>
+                        <td>
+                            <input type="text" class="pole_Ilosc" name="ile4">
+                        </td>
+                        <td>0,50/zestaw (10 sztuk)</td>
+                    </tr>
+                    <tr onmouseenter="obraz5()" onmouseleave="odraz()" class="zakupy">
+                        <td>
+                            brzęczyk
+                        </td>
+                        <td>
+                            <input type="text" class="pole_Ilosc" name="ile5">
+                        </td>
+                        <td>2,00/szt</td>
+                    </tr>
+                    <tr onmouseenter="obraz6()" onmouseleave="odraz()" class="zakupy">
+                        <td>
+                            przycisk chwilowy
+                        </td>
+                        <td>
+                            <input type="text" class="pole_Ilosc" name="ile6">
+                        </td>
+                        <td>2,50/szt</td>
+                    </tr>
+                </table>
+                <input type="submit" value="kup">
+                Kod promocyjny (na pewno nie "abc"): <input type="text" name="promo">
+
+            </form>
+        </div>
+        <div id="obrazek">
+            <img id="image" src="" alt="">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+
+<script>
+    function promka(){
+        let btn = document.getElementById("promo");
+        btn.hidden = false;
+    }
+
+    function obraz1() {
+        let image = document.getElementById("image");
+
+        image.src = "transistor.png"
+        image.style.height = "300px"
+
+
+    }
+    function odraz() {
+        let image = document.getElementById("image");
+        image.src = ""
+    }
+    function obraz2() {
+        let image = document.getElementById("image");
+
+        image.src = "resistor.png"
+        image.style.height = "300px"
+    }
+    function obraz3() {
+        let image = document.getElementById("image");
+
+        image.src = "dioda.png"
+        image.style.height = "300px"
+    }
+    function obraz4() {
+        let image = document.getElementById("image");
+
+        image.src = "kabelki.png"
+        image.style.height = "300px"
+    }
+    function obraz5() {
+        let image = document.getElementById("image");
+
+        image.src = "buzzer.png"
+        image.style.height = "300px"
+    }
+    function obraz6() {
+        let image = document.getElementById("image");
+
+        image.src = "przycisk.png"
+        image.style.height = "300px"
+    }
+
+</script>

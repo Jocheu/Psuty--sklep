@@ -1,0 +1,68 @@
+body {
+    margin:  0px;
+    padding: 0px;
+    font-family: 'Comic Neue', cursive;
+}
+
+#baner {
+    display: flex;
+    justify-content: center;
+    color: gold;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(72,72,255,1) 42%,
+    rgba(40,135,255,1) 68%, rgba(0, 212, 255, 1) 100%);
+    padding: 0px;
+    margin: 0px;
+}
+
+.zakupy:hover {
+    transition-duration: 1s;
+    background-color: gold;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(72,72,255,1) 42%,
+    rgba(40,135,255,1) 68%, rgba(0, 212, 255, 1) 100%);
+    
+}
+
+#content {
+    margin-left: 20%;
+}
+
+#obrazek {
+    margin-left: 20%;
+    height: 400px;
+}
+
+@keyframes color 
+
+{
+
+0% { color:limegreen; }
+
+25% {color: rgb(0, 183, 255);}
+
+50% {color: red;}
+
+75% {color: rgb(0, 183, 255);}
+
+100% { color:limegreen; }
+
+}
+
+#rgb :hover {
+    animation-name: color;
+
+    animation-duration:5s;
+
+    animation-iteration-count:infinite;
+}
+
+.pole_Ilosc {
+    width: 50px;
+    border-radius: 1px;
+}
